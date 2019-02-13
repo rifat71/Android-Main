@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUp"
+    android:id="@+id/mainPopUp"
+    xmlns:uber="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/uber"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/uber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uber"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/uber"
+        android:id="@+id/text_uber"
+        android:textStyle="bold"/>
+
+    <ImageView
+    android:layout_width="70dp"
+    android:layout_height="60dp"
+    android:id="@+id/uberx"
+    android:layout_below="@+id/text_uber"
+    android:layout_marginLeft="30dp"
+        android:src="@drawable/uberx"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uberx_price"
+        android:layout_below="@+id/uberx"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uberx_text"
+        android:layout_below="@+id/uberx_price"
+        android:layout_marginLeft="50dp"
+        android:text="UberX"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/premier"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/uberx"
+        android:layout_below="@+id/text_uber"
+        android:src="@drawable/premier"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/premier_price"
+        android:layout_toRightOf="@+id/uberx_price"
+        android:layout_below="@+id/premier"
+        android:layout_marginLeft="110dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/premier_text"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/uberx_text"
+        android:layout_below="@+id/premier_price"
+        android:text="Premier"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/intercity"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/text_uber"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/premier"
+        android:src="@drawable/uberx" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intercity_price"
+        android:layout_toRightOf="@+id/premier_price"
+        android:layout_below="@+id/intercity"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/black"
+        android:text="BDT 500.00"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intercity_text"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/premier_text"
+        android:layout_below="@+id/intercity_price"
+        android:text="InterCity"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/hold_uber"
+        android:orientation="vertical"
+        android:layout_below="@+id/uberx_text"
+        android:layout_margin="15dp">
+    </LinearLayout>
+
+</RelativeLayout>
